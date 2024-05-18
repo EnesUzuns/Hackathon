@@ -16,7 +16,7 @@
           }
         }
       },
-      "/access": {
+      "/post": {
         "post": {
           "description": "Grants access to a user",
           "consumes": ["application/json"],
@@ -47,10 +47,22 @@
       "AccessData": {
         "type": "object",
         "properties": {
-          "name": {
+          "fullname": {
             "type": "string"
           },
-          "server": {
+          "phone_number": {
+            "type": "string"
+          },
+          "address": {
+            "type": "string"
+          },
+          "priority": {
+            "type": "string"
+          },
+          "organization": {
+            "type": "string"
+          },
+          "message": {
             "type": "string"
           }
         }

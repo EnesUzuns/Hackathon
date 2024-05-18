@@ -7,9 +7,16 @@ app = Flask(__name__)
 def get_data():
     return jsonify({
         "name": "zahid",
+        "phone_number": "05555555555",
+        "message": "help me out pls",
+        "priority": "first",
         "latitude" : 233.4567653234567,
         "longitude" : 103.444443353
     })
+
+    def get_ip():
+        user_ip = request.remote_addr
+        "https://ip-api.com/json/{user_ip}"
 
 @app.route("/post", methods=["POST"])
 def create_todo():
