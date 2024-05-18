@@ -55,7 +55,7 @@ const Form = () => {
       <div>
         <label>Yardım Kuruluşları:</label>
         <select name="organization" value={formData.organization} onChange={handleChange} required>
-          <option value="">Seçin</option>
+          <option value="Tumu">Tümü</option>
           <option value="Cansuyu">Cansuyu</option>
           <option value="IHH">IHH</option>
         </select>
