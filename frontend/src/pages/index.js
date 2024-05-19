@@ -4,12 +4,12 @@ import "bootstrap/dist/css/bootstrap.css";
 
 function App() {
   const [formData, setFormData] = useState({
-    fullname: "",
-    phone_number: "",
-    address: "",
-    priority: "",
-    organization: "",
-    message: "",
+    fullname: '',
+    phone_number: '',
+    address: '',
+    priority: '',
+    organization: '',
+    message: ''
   });
 
   const handleChange = (e) => {
@@ -23,7 +23,16 @@ function App() {
       .then((response) => {
         if (response.status === 201) {
           document.getElementById("messageContainer").innerText =
-            "Mesajınız Başarıyla Gerekli Kurumlara Gönderildi.";
+            "Mesajınız Başarıyla Gerekli Kurumlara Gönderildi. ✅";
+          // Form gönderildikten sonra inputları temizle
+          setFormData({
+            fullname: '',
+            phone_number: '',
+            address: '',
+            priority: '',
+            organization: '',
+            message: ''
+          });
         } else {
           console.error("There was an error!");
         }
@@ -74,7 +83,7 @@ function App() {
           <div className="col-xl-4 col-md-6 col-lg-6">
             <div className="helpful-card-two wow fadeInUp" data-wow-delay="0.0s">
               <div className="helpful-card-icon">
-                <i className="ri-book-open-line"></i>
+                <i className="ri-hand-heart-line"></i>
               </div>
               <div className="helpful-card-caption">
                 <h4 className="caption-title">Education & Food for Chidrens</h4>
@@ -119,7 +128,7 @@ function App() {
         </div>
       </div>
     </section>
-    <section className="about-area" id="form">
+    <section className="about-area bottom-padding" id="form">
       <div className="container">
         <div className="row">
           <div className="col-xl-12">
@@ -147,64 +156,65 @@ function App() {
                   <div className="col-xl-12">
                     <div className="form-group">
                       <label className="custom-label" htmlFor="address">Adres</label>
-                      <input type="email" className="form-control custom-input" id="address" value={formData.address} onChange={handleChange} name="address"
+                      <input type="text" className="form-control custom-input" id="address" value={formData.address} onChange={handleChange} name="address"
                         placeholder="Lütfen Adresinizi Giriniz.." />
                     </div>
                   </div>
                   <div className="col-xl-6">
                     <div className="form-group">
                       <label className="custom-label" htmlFor="priority">Durumunuz</label>
-                      <input type="text" className="form-control custom-input" id="priority" value={formData.priority} onChange={handleChange} name="fullname"
-                        placeholder="Ad ve Soyad Giriniz.." required />
+                        <select
+                          className="form-control custom-input"
+                          name="priority"
+                          value={formData.priority}
+                          onChange={handleChange}
+                          required
+                        >
+                          <option value="">
+                            Seçiniz
+                          </option>
+                          <option value="Enkazdayım">Enkazdayım</option>
+                          <option value="Enkazda değilim">Enkazda değilim</option>
+                          <option value="Çadırdayım">Çadırdayım</option>
+                        </select>
                     </div>
                   </div>
                   <div className="col-xl-6">
                     <div className="form-group">
-                      <label className="custom-label" htmlFor="phone_number">Phone</label>
-                      <input type="text" className="form-control custom-input" id="phone_number" value={formData.phone_number} onChange={handleChange} name="phone_number"
-                        placeholder="Telefon Numaranızı Giriniz.." />
+                      <label className="custom-label" htmlFor="organization">Yardım Kuruluşları</label>
+                      <select
+                          className="form-control custom-input"
+                          name="organization"
+                          value={formData.organization}
+                          onChange={handleChange}
+                          required
+                        >
+                          <option value="">
+                            Seçiniz
+                          </option>
+                          <option value="Tumu">Tümü</option>
+                          <option value="Cansuyu">Cansuyu</option>
+                          <option value="IHH">IHH</option>
+                        </select>
                     </div>
                   </div>
                 </div>
                 <div className="col-xl-12">
                   <div className="form-group">
-                    <label className="custom-label" htmlFor="exampleFormControlTextarea1">Message</label>
-                    <textarea className="form-control custom-textarea" id="exampleFormControlTextarea1"
-                      placeholder="Type You message here"></textarea>
+                    <label className="custom-label" htmlFor="message">Yardım Mesajı</label>
+                    <textarea className="form-control custom-textarea" id="message" name="message" value={formData.message} onChange={handleChange}
+                      placeholder="Yardım Mesajınızı Giriniz.."></textarea>
                   </div>
                 </div>
-                <button type="submit" className="submit-btn">Send Message</button>
+                <button type="submit" className="w-100 submit-btn">Mesaj Gönder</button>
+                <div id="messageContainer" className="d-flex mt-4 justify-content-center"></div>
               </form>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <div className="popular-brand-section bottom-padding">
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-12">
-            <div className="brand-img-container">
-              <div className="flex justify-content-between brand-img-slider align-items-center">
-                <div className="brand-img">
-                  <img src="assets/images/gallery/brand-1.png" alt="image" />
-                </div>
-                <div className="brand-img">
-                  <img src="assets/images/gallery/brand-2.png" alt="image" />
-                </div>
-                <div className="brand-img">
-                  <img src="assets/images/gallery/brand-3.png" alt="image" />
-                </div>
-                <div className="brand-img">
-                  <img src="assets/images/gallery/brand-4.png" alt="image" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-        {/* <Form /> */}
+    
       </div>
     </div>
   );

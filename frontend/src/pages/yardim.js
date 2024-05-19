@@ -1,6 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 
-const yardim = () => {
+const Yardim = () => {
+  const [veriler, setVeriler] = useState([]);
+
+  useEffect(() => {
+    // Backend API'den verileri çekmek için axios kullanarak GET isteği yapın
+    axios
+      .get("http://127.0.0.1:5000/list")
+      .then((response) => {
+        setVeriler(response.data);
+      })
+      .catch((error) => {
+        console.error("Veri alınırken bir hata oluştu:", error);
+      });
+  }, []);
+
   return (
     <>
       <section className="breadcrumb-section breadcrumb-bg">
@@ -33,12 +48,8 @@ const yardim = () => {
       <section className="blog-section-two section-padding2 category-section">
         <div className="container">
           <div className="row gy-24 justify-content-center">
-            <div className="col-xl-4 col-lg-4 w-100 col-md-6 col-sm-12 view-wrapper">
-              <div
-                className="single-blog h-calc wow fadeInLeft"
-                data-wow-delay="0.1s"
-              >
-                <div className="blog-img position-relative"></div>
+            <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 view-wrapper">
+              <div className="single-blog h-calc">
                 <div className="category-box">
                   <div className="d-flex justify-content-between align-items-center">
                     <div className="blog-info-title">
@@ -54,34 +65,17 @@ const yardim = () => {
                           </tr>
                         </thead>
                         <tbody>
-                          <tr>
-                            <th scope="row">5 Dakika Önce</th>
-                            <td>Enes Uzun</td>
-                            <td>05510171885</td>
-                            <td>
-                              İstanbul Üsküdar Çengelköy mahallesi kalantor
-                              sokak
-                            </td>
-                            <td>Enkazda</td>
-                            <td>
-                              Lütfen Yardım edin Lütfen Yardım edin Lütfen
-                              Yardım edin Lütfen
-                            </td>
-                          </tr>
-                          <tr>
-                            <th scope="row">5 Dakika Önce</th>
-                            <td>Enes Uzun</td>
-                            <td>05510171885</td>
-                            <td>
-                              İstanbul Üsküdar Çengelköy mahallesi kalantor
-                              sokak
-                            </td>
-                            <td>Enkazda</td>
-                            <td>
-                              Lütfen Yardım edin Lütfen Yardım edin Lütfen
-                              Yardım edin Lütfen
-                            </td>
-                          </tr>
+                          {/* Verileri map fonksiyonuyla tabloya ekleme */}
+                          {veriler.map((veri) => (
+                            <tr key={veri.id}>
+                              <td>{veri.minutes_ago} Dakika Önce</td>
+                              <td>{veri.fullname}</td>
+                              <td>{veri.phone_number}</td>
+                              <td>{veri.address}</td>
+                              <td>{veri.priority}</td>
+                              <td>{veri.message}</td>
+                            </tr>
+                          ))}
                         </tbody>
                       </table>
                     </div>
@@ -96,4 +90,4 @@ const yardim = () => {
   );
 };
 
-export default yardim;
+export default Yardim;

@@ -33,7 +33,7 @@ const Header = () => {
                     </div>
                   </div>
                   <div className="div">
-                    <div className="mobile_menu d-block d-lg-none"></div>
+                    <div className="mobile_menu mt-4 d-block d-lg-none"></div>
                   </div>
                 </div>
               </div>
