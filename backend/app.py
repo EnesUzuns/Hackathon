@@ -33,7 +33,7 @@ def submit():
     )
     db.session.add(form_data)
     db.session.commit()
-    return jsonify({"message": "Data submitted successfully"}), 201
+    return jsonify({"message": "Mesajınız Başarıyla Gerekli Kurumlara Gönderildi."}), 201
 
 @app.route('/list', methods=['GET'])
 def list():
