@@ -49,13 +49,85 @@ const Kurulus = () => {
                   <div className="d-flex justify-content-between align-items-center">
                     <div className="donate-info-title">
                       <h4 className="title text-capitalize">
-                        <a href="donation-details.html">Cansuyu</a>
+                        <a href="donation-details.html">Can Suyu Derneği </a>
                       </h4>
                       <p className="subtitle">
-                        Cansuyu acil bağış Yardımlaşma ve Dayanışma Derneği
+                      Acil Yardım, Eğitim ve Sağlık, Su Kuyuları, Gıda ve Giysi Yardımı, Yetim ve Muhtaçlara Yardım.
                       </p>
                       <a
                         href="https://cansuyu.org.tr/"
+                        target="_blank"
+                        className="btn donate-btn w-100 mt-5"
+                      >
+                        Siteye Git
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 view-wrapper">
+              <div className="single-donate h-calc">
+                <div className="donate-img position-relative">
+                  <a href="donation-details.html">
+                    {" "}
+                    <img
+                      className="w-100"
+                      src="assets/images/gallery/kızılay.jpg"
+                      alt="img"
+                    />
+                  </a>
+                </div>
+                <div className="donate-info">
+                  <div className="d-flex justify-content-between align-items-center">
+                    <div className="donate-info-title">
+                      <h4 className="title text-capitalize">
+                        <a href="donation-details.html">
+                        Kızılay 
+                        </a>
+                      </h4>
+                      <p className="subtitle">
+                      Acil durum ve afet yardımı, sağlık hizmetleri, kan bağışı, sosyal yardım.
+
+                      </p>
+                      <a
+                        target="_blank"
+                        href="https://kizilay.org.tr"
+                        className="btn donate-btn w-100 mt-5"
+                      >
+                        Siteye Git
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 view-wrapper">
+              <div className="single-donate h-calc">
+                <div className="donate-img position-relative">
+                  <a href="donation-details.html">
+                    {" "}
+                    <img
+                      className="w-100"
+                      
+                      src="assets/images/gallery/afad.png"
+                      alt="img"
+                    />
+                  </a>
+                </div>
+                <div className="donate-info">
+                  <div className="d-flex justify-content-between align-items-center">
+                    <div className="donate-info-title">
+                      <h4 className="title text-capitalize">
+                        <a href="donation-details.html">
+                        AFAD 
+                        </a>
+                      </h4>
+                      <p className="subtitle">
+                      Afet ve acil durum yönetimi, kurtarma operasyonları, eğitim ve bilinçlendirme.
+                      </p>
+                      <a
+                        href="https://www.afad.gov.tr/"
                         target="_blank"
                         className="btn donate-btn w-100"
                       >
@@ -66,14 +138,17 @@ const Kurulus = () => {
                 </div>
               </div>
             </div>
-            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 view-wrapper">
+            <div
+              className="col-xl-4 col-lg-4 col-md-6 col-sm-12 view-wrapper"
+              style={{ marginTop: "24px" }}
+            >
               <div className="single-donate h-calc">
                 <div className="donate-img position-relative">
                   <a href="donation-details.html">
                     {" "}
                     <img
                       className="w-100"
-                      src="assets/images/gallery/donate-2.png"
+                      src="assets/images/gallery/ihh.jpg"
                       alt="img"
                     />
                   </a>
@@ -83,16 +158,16 @@ const Kurulus = () => {
                     <div className="donate-info-title">
                       <h4 className="title text-capitalize">
                         <a href="donation-details.html">
-                          We assure you that your donation will be used wisely.
+                        İHH
                         </a>
                       </h4>
                       <p className="subtitle">
-                        We understand that there are many people organization
-                        The seeking support,
+                      Acil yardım, insani yardım, sağlık, eğitim, sosyal hizmetler.
                       </p>
                       <a
-                        href="donate-payment.html"
-                        className="btn donate-btn w-100"
+                        href="https://ihh.org.tr/"
+                        target="_blank"
+                        className="btn donate-btn w-100 mt-5"
                       >
                         Siteye Git
                       </a>
@@ -101,14 +176,17 @@ const Kurulus = () => {
                 </div>
               </div>
             </div>
-            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 view-wrapper">
+            <div
+              className="col-xl-4 col-lg-4 col-md-6 col-sm-12 view-wrapper"
+              style={{ marginTop: "24px" }}
+            >
               <div className="single-donate h-calc">
                 <div className="donate-img position-relative">
                   <a href="donation-details.html">
                     {" "}
                     <img
                       className="w-100"
-                      src="assets/images/gallery/donate-3.png"
+                      src="assets/images/gallery/sadaka-tası.png"
                       alt="img"
                     />
                   </a>
@@ -118,15 +196,15 @@ const Kurulus = () => {
                     <div className="donate-info-title">
                       <h4 className="title text-capitalize">
                         <a href="donation-details.html">
-                          We assure you that your donation will be used wisely.
+                        Sadakataşı Derneği
                         </a>
                       </h4>
                       <p className="subtitle">
-                        We understand that there are many people organization
-                        The seeking support,
+                      Acil yardım, sağlık hizmetleri, su kuyusu projeleri, eğitim, yetim destek projeleri.
                       </p>
                       <a
-                        href="donate-payment.html"
+                        href="https://bagis.sadakatasi.org.tr/"
+                        target="_blank"
                         className="btn donate-btn w-100"
                       >
                         Siteye Git
@@ -146,7 +224,7 @@ const Kurulus = () => {
                     {" "}
                     <img
                       className="w-100"
-                      src="assets/images/gallery/donate-6.png"
+                      src="assets/images/gallery/ahbap-kalbi.png"
                       alt="img"
                     />
                   </a>
@@ -156,91 +234,15 @@ const Kurulus = () => {
                     <div className="donate-info-title">
                       <h4 className="title text-capitalize">
                         <a href="donation-details.html">
-                          We assure you that your donation will be used wisely.
+                        Ahbap
                         </a>
                       </h4>
                       <p className="subtitle">
-                        We understand that there are many people organization
-                        The seeking support,
+                      sosyal yardımlaşma ve dayanışma amacıyla kurulan bir sivil toplum kuruluşudur.
                       </p>
                       <a
-                        href="donate-payment.html"
-                        className="btn donate-btn w-100"
-                      >
-                        Siteye Git
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="col-xl-4 col-lg-4 col-md-6 col-sm-12 view-wrapper"
-              style={{ marginTop: "24px" }}
-            >
-              <div className="single-donate h-calc">
-                <div className="donate-img position-relative">
-                  <a href="donation-details.html">
-                    {" "}
-                    <img
-                      className="w-100"
-                      src="assets/images/gallery/donate-7.png"
-                      alt="img"
-                    />
-                  </a>
-                </div>
-                <div className="donate-info">
-                  <div className="d-flex justify-content-between align-items-center">
-                    <div className="donate-info-title">
-                      <h4 className="title text-capitalize">
-                        <a href="donation-details.html">
-                          We assure you that your donation will be used wisely.
-                        </a>
-                      </h4>
-                      <p className="subtitle">
-                        We understand that there are many people organization
-                        The seeking support,
-                      </p>
-                      <a
-                        href="donate-payment.html"
-                        className="btn donate-btn w-100"
-                      >
-                        Siteye Git
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="col-xl-4 col-lg-4 col-md-6 col-sm-12 view-wrapper"
-              style={{ marginTop: "24px" }}
-            >
-              <div className="single-donate h-calc">
-                <div className="donate-img position-relative">
-                  <a href="donation-details.html">
-                    {" "}
-                    <img
-                      className="w-100"
-                      src="assets/images/gallery/donate-8.png"
-                      alt="img"
-                    />
-                  </a>
-                </div>
-                <div className="donate-info">
-                  <div className="d-flex justify-content-between align-items-center">
-                    <div className="donate-info-title">
-                      <h4 className="title text-capitalize">
-                        <a href="donation-details.html">
-                          We assure you that your donation will be used wisely.
-                        </a>
-                      </h4>
-                      <p className="subtitle">
-                        We understand that there are many people organization
-                        The seeking support,
-                      </p>
-                      <a
-                        href="donate-payment.html"
+                        href="https://ahbap.org/"
+                        target="_blank"
                         className="btn donate-btn w-100"
                       >
                         Siteye Git
