@@ -5,39 +5,114 @@
       "version": "1.0.0"
     },
     "paths": {
-      "/": {
-        "get": {
-          "description": "Returns message showing app is up",
-          "produces": ["application/json"],
-          "responses": {
-            "200": {
-              "description": "Successful operation"
-            }
-          }
-        }
-      },
-      "/post": {
+      "/submit": {
         "post": {
-          "description": "Grants access to a user",
-          "consumes": ["application/json"],
-          "produces": ["application/json"],
+          "summary": "Submit form data",
+          "description": "This endpoint allows you to submit form data.",
+          "tags": ["Form"],
           "parameters": [
             {
-              "name": "access data",
               "in": "body",
-              "description": "JSON data for the API",
+              "name": "body",
+              "description": "Form data to be submitted",
               "required": true,
               "schema": {
-                "$ref": "#/definitions/AccessData"
+                "type": "object",
+                "properties": {
+                  "fullname": {
+                    "type": "string",
+                    "description": "Full name of the user"
+                  },
+                  "phone_number": {
+                    "type": "string",
+                    "description": "Phone number of the user"
+                  },
+                  "address": {
+                    "type": "string",
+                    "description": "Address of the user"
+                  },
+                  "priority": {
+                    "type": "string",
+                    "description": "Priority level"
+                  },
+                  "organization": {
+                    "type": "string",
+                    "description": "Aid organization"
+                  },
+                  "message": {
+                    "type": "string",
+                    "description": "Additional message"
+                  }
+                }
               }
             }
           ],
           "responses": {
+            "201": {
+              "description": "Data submitted successfully",
+              "content": {
+                "application/json": {
+                  "example": {
+                    "message": "Data submitted successfully"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/list": {
+        "get": {
+          "summary": "Get list of form data",
+          "description": "This endpoint allows you to get a list of form data.",
+          "tags": ["Form"],
+          "responses": {
             "200": {
-              "description": "User granted access"
-            },
-            "400": {
-              "description": "Invalid request data"
+              "description": "List of form data",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "integer",
+                          "description": "Form ID"
+                        },
+                        "fullname": {
+                          "type": "string",
+                          "description": "Full name of the user"
+                        },
+                        "phone_number": {
+                          "type": "string",
+                          "description": "Phone number of the user"
+                        },
+                        "address": {
+                          "type": "string",
+                          "description": "Address of the user"
+                        },
+                        "priority": {
+                          "type": "string",
+                          "description": "Priority level"
+                        },
+                        "organization": {
+                          "type": "string",
+                          "description": "Aid organization"
+                        },
+                        "message": {
+                          "type": "string",
+                          "description": "Additional message"
+                        },
+                        "minutes_ago": {
+                          "type": "integer",
+                          "description": "Time elapsed since submission (in minutes)"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
             }
           }
         }

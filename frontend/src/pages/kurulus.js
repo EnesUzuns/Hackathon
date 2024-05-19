@@ -13,12 +13,12 @@ const Kurulus = () => {
             >
               <ul className="breadcrumb listing">
                 <li className="breadcrumb-item single-list">
-                  <a href="index.html" className="single">
+                  <a href="/" className="single">
                     Anasayfa
                   </a>
                 </li>
                 <li className="breadcrumb-item single-list" aria-current="page">
-                  <a href="javascript:void(0)" className="single">
+                  <a href="/kurulus" className="single">
                     Kuruluşlar
                   </a>
                 </li>
@@ -33,7 +33,10 @@ const Kurulus = () => {
       <section className="donate-section top-bottom-padding">
         <div className="container">
           <div className="row gy-24">
-            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 view-wrapper">
+            <div
+              className="col-xl-4 col-lg-4 col-md-6 col-sm-12 view-wrapper"
+              style={{ marginTop: "24px" }}
+            >
               <div className="single-donate h-calc">
                 <div className="donate-img position-relative">
                   <a href="https://cansuyu.org.tr/" target="_blank">
@@ -49,10 +52,11 @@ const Kurulus = () => {
                   <div className="d-flex justify-content-between align-items-center">
                     <div className="donate-info-title">
                       <h4 className="title text-capitalize">
-                        <a href="donation-details.html">Can Suyu Derneği </a>
+                        <a href="https://cansuyu.org.tr/">Can Suyu Derneği </a>
                       </h4>
                       <p className="subtitle">
-                      Acil Yardım, Eğitim ve Sağlık, Su Kuyuları, Gıda ve Giysi Yardımı, Yetim ve Muhtaçlara Yardım.
+                        Acil Yardım, Eğitim ve Sağlık, Su Kuyuları, Gıda ve
+                        Giysi Yardımı, Yetim ve Muhtaçlara Yardım.
                       </p>
                       <a
                         href="https://cansuyu.org.tr/"
@@ -66,11 +70,13 @@ const Kurulus = () => {
                 </div>
               </div>
             </div>
-            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 view-wrapper">
+            <div
+              className="col-xl-4 col-lg-4 col-md-6 col-sm-12 view-wrapper"
+              style={{ marginTop: "24px" }}
+            >
               <div className="single-donate h-calc">
                 <div className="donate-img position-relative">
-                  <a href="donation-details.html">
-                    {" "}
+                  <a href="https://kizilay.org.tr">
                     <img
                       className="w-100"
                       src="assets/images/gallery/kızılay.jpg"
@@ -82,13 +88,11 @@ const Kurulus = () => {
                   <div className="d-flex justify-content-between align-items-center">
                     <div className="donate-info-title">
                       <h4 className="title text-capitalize">
-                        <a href="donation-details.html">
-                        Kızılay 
-                        </a>
+                        <a href="https://kizilay.org.tr">Kızılay</a>
                       </h4>
                       <p className="subtitle">
-                      Acil durum ve afet yardımı, sağlık hizmetleri, kan bağışı, sosyal yardım.
-
+                        Acil durum ve afet yardımı, sağlık hizmetleri, kan
+                        bağışı, sosyal yardım.
                       </p>
                       <a
                         target="_blank"
@@ -102,14 +106,15 @@ const Kurulus = () => {
                 </div>
               </div>
             </div>
-            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 view-wrapper">
+            <div
+              className="col-xl-4 col-lg-4 col-md-6 col-sm-12 view-wrapper"
+              style={{ marginTop: "24px" }}
+            >
               <div className="single-donate h-calc">
                 <div className="donate-img position-relative">
-                  <a href="donation-details.html">
-                    {" "}
+                  <a href="https://www.afad.gov.tr/">
                     <img
                       className="w-100"
-                      
                       src="assets/images/gallery/afad.png"
                       alt="img"
                     />
@@ -119,12 +124,11 @@ const Kurulus = () => {
                   <div className="d-flex justify-content-between align-items-center">
                     <div className="donate-info-title">
                       <h4 className="title text-capitalize">
-                        <a href="donation-details.html">
-                        AFAD 
-                        </a>
+                        <a href="https://www.afad.gov.tr/">AFAD</a>
                       </h4>
                       <p className="subtitle">
-                      Afet ve acil durum yönetimi, kurtarma operasyonları, eğitim ve bilinçlendirme.
+                        Afet ve acil durum yönetimi, kurtarma operasyonları,
+                        eğitim ve bilinçlendirme.
                       </p>
                       <a
                         href="https://www.afad.gov.tr/"
@@ -144,8 +148,7 @@ const Kurulus = () => {
             >
               <div className="single-donate h-calc">
                 <div className="donate-img position-relative">
-                  <a href="donation-details.html">
-                    {" "}
+                  <a href="https://ihh.org.tr/">
                     <img
                       className="w-100"
                       src="assets/images/gallery/ihh.jpg"
@@ -157,12 +160,11 @@ const Kurulus = () => {
                   <div className="d-flex justify-content-between align-items-center">
                     <div className="donate-info-title">
                       <h4 className="title text-capitalize">
-                        <a href="donation-details.html">
-                        İHH
-                        </a>
+                        <a href="https://ihh.org.tr/">İHH</a>
                       </h4>
                       <p className="subtitle">
-                      Acil yardım, insani yardım, sağlık, eğitim, sosyal hizmetler.
+                        Acil yardım, insani yardım, sağlık, eğitim, sosyal
+                        hizmetler.
                       </p>
                       <a
                         href="https://ihh.org.tr/"
@@ -182,8 +184,7 @@ const Kurulus = () => {
             >
               <div className="single-donate h-calc">
                 <div className="donate-img position-relative">
-                  <a href="donation-details.html">
-                    {" "}
+                  <a href="https://bagis.sadakatasi.org.tr/">
                     <img
                       className="w-100"
                       src="assets/images/gallery/sadaka-tası.png"
@@ -195,12 +196,13 @@ const Kurulus = () => {
                   <div className="d-flex justify-content-between align-items-center">
                     <div className="donate-info-title">
                       <h4 className="title text-capitalize">
-                        <a href="donation-details.html">
-                        Sadakataşı Derneği
+                        <a href="https://bagis.sadakatasi.org.tr/">
+                          Sadakataşı Derneği
                         </a>
                       </h4>
                       <p className="subtitle">
-                      Acil yardım, sağlık hizmetleri, su kuyusu projeleri, eğitim, yetim destek projeleri.
+                        Acil yardım, sağlık hizmetleri, su kuyusu projeleri,
+                        eğitim, yetim destek projeleri.
                       </p>
                       <a
                         href="https://bagis.sadakatasi.org.tr/"
@@ -220,8 +222,7 @@ const Kurulus = () => {
             >
               <div className="single-donate h-calc">
                 <div className="donate-img position-relative">
-                  <a href="donation-details.html">
-                    {" "}
+                  <a href="https://ahbap.org/">
                     <img
                       className="w-100"
                       src="assets/images/gallery/ahbap-kalbi.png"
@@ -233,12 +234,11 @@ const Kurulus = () => {
                   <div className="d-flex justify-content-between align-items-center">
                     <div className="donate-info-title">
                       <h4 className="title text-capitalize">
-                        <a href="donation-details.html">
-                        Ahbap
-                        </a>
+                        <a href="https://ahbap.org/">Ahbap</a>
                       </h4>
                       <p className="subtitle">
-                      sosyal yardımlaşma ve dayanışma amacıyla kurulan bir sivil toplum kuruluşudur.
+                        sosyal yardımlaşma ve dayanışma amacıyla kurulan bir
+                        sivil toplum kuruluşudur.
                       </p>
                       <a
                         href="https://ahbap.org/"

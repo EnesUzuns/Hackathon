@@ -5,7 +5,7 @@ const Header = () => {
     <>
       <div className="loading-page" id="preloader-active">
         <div className="counter">
-          <p className="text text-capitalize">loading</p>
+          <p className="text text-capitalize">Yükleniyor...</p>
           <span className="number">0%</span>
           <span className="line"></span>
         </div>

@@ -28,12 +28,12 @@ const Yardim = () => {
             >
               <ul className="breadcrumb listing">
                 <li className="breadcrumb-item single-list">
-                  <a href="index.html" className="single">
+                  <a href="/" className="single">
                     Anasayfa
                   </a>
                 </li>
                 <li className="breadcrumb-item single-list" aria-current="page">
-                  <a href="javascript:void(0)" className="single">
+                  <a href="/yardim" className="single">
                     Yardım Et
                   </a>
                 </li>

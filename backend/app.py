@@ -24,6 +24,8 @@ class Form(db.Model):
 @app.route('/submit', methods=['POST'])
 def submit():
     data = request.get_json()
+    ip = request.remote_addr
+    print(ip)
     form_data = Form(
         fullname=data['fullname'],
         phone_number=data['phone_number'],
