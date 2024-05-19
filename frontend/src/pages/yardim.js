@@ -62,6 +62,7 @@ const Yardim = () => {
                             <th scope="col">Adres</th>
                             <th scope="col">Durumu</th>
                             <th scope="col">Yardım Mesajı</th>
+                            <th scope="col">Harita</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -74,6 +75,7 @@ const Yardim = () => {
                               <td>{veri.address}</td>
                               <td>{veri.priority}</td>
                               <td>{veri.message}</td>
+                              <td><a href={veri.map} target="_blank"><i class="ri-map-pin-line"></i></a></td>
                             </tr>
                           ))}
                         </tbody>

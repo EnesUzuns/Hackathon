@@ -18,14 +18,14 @@ class Form(db.Model):
     address = db.Column(db.String(200), nullable=False)
     priority = db.Column(db.String(50), nullable=False)
     organization = db.Column(db.String(50), nullable=False)
+    lat = db.Column(db.String(50), nullable=False)
+    lon = db.Column(db.String(50), nullable=False)
     message = db.Column(db.String(500), nullable=True)
     date = db.Column(db.DateTime, nullable=False)
 
 @app.route('/submit', methods=['POST'])
 def submit():
     data = request.get_json()
-    ip = request.remote_addr
-    print(ip)
     form_data = Form(
         fullname=data['fullname'],
         phone_number=data['phone_number'],
@@ -33,6 +33,8 @@ def submit():
         priority=data['priority'],
         organization=data['organization'],
         message=data['message'],
+        lat=data['lat'],
+        lon=data['lon'],
         date=datetime.datetime.now()
     )
     db.session.add(form_data)
@@ -44,6 +46,7 @@ def list_data():
     data = Form.query.all()
     data_dict = []
     for item in data:
+        map = f"https://google.com/maps/place/{item.lat},{item.lon}"
         time_difference = datetime.datetime.now() - item.date
         minutes = int(time_difference.total_seconds() / 60)
         data_dict.append({
@@ -53,6 +56,7 @@ def list_data():
             "address": item.address,
             "priority": item.priority,
             "organization": item.organization,
+            "map": map,
             "message": item.message,
             "minutes_ago": minutes
         })
