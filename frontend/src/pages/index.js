@@ -268,11 +268,10 @@ function App() {
                             required
                           >
                             <option value="">Seçiniz</option>
-                            <option value="Enkazdayım">Enkazdayım</option>
-                            <option value="Enkazda değilim">
-                              Enkazda değilim
-                            </option>
-                            <option value="Çadırdayım">Çadırdayım</option>
+                            <option value="Hayati Tehlike">Hayati Tehlike</option>
+                            <option value="Acil Tıbbi Yardım">Acil Tıbbi Yardım</option>
+                            <option value="Barınma ve Temel İhtiyaç">Barınma ve Temel İhtiyaç</option>
+                            <option value="Diğer Yardım Talepleri">Diğer Yardım Talepleri</option>
                           </select>
                         </div>
                       </div>
@@ -294,7 +293,11 @@ function App() {
                             <option value="">Seçiniz</option>
                             <option value="Tumu">Tümü</option>
                             <option value="Cansuyu">Cansuyu</option>
+                            <option value="Kızılay">Kızılay</option>
+                            <option value="AFAD">AFAD</option>
                             <option value="IHH">IHH</option>
+                            <option value="Sadakataşı Derneği">Sadakataşı Derneği</option>
+                            <option value="Ahbap">Ahbap</option>
                           </select>
                         </div>
                       </div>
