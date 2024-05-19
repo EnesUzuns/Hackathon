@@ -50,25 +50,17 @@ function App() {
             <div className="row justify-content-between">
               <div className="col-xxl-6 col-xl-6 col-lg-6 my-auto">
                 <div className="hero-caption mb-20">
-                  <p className="key-title font-700 mb-20 wow fadeInUp" data-wow-delay="0.0s">Charity Is priority</p>
-                  <h1 className="title font-700 wow fadeInUp" data-wow-delay="0.1s">Giving help To Those Who Need It.</h1>
-                  <p className="pera mx-width-780 wow fadeInUp" data-wow-delay="0.2s">Involves donating one's body after death
-                    for medical research, education, or anatomical dissection. Body donation plays a crucial role in
-                    advancing medical science</p>
+                  <h1 className="title font-700 wow fadeInUp" data-wow-delay="0.1s">Zelzel-i Müdhişe</h1>
+                  <p className="pera mx-width-780 wow fadeInUp" data-wow-delay="0.2s">İstanbul'da depremde güvenli bir yere sığınıp başınızı koruyun. Deprem çantanızda temel ihtiyaçları bulundurun. Aile iletişim planı yapın. Komşularla yardımlaşmayı unutmayın.</p>
                   <div className="d-flex gap-20 flex-wrap">
-                    <a href="#form" className="btn-primary-fill hero-btn wow fadeInUp" data-wow-delay="0.3s">Donate
-                      Now</a>
+                    <a href="#form" className="btn-primary-fill hero-btn wow fadeInUp" data-wow-delay="0.3s">Yardım İste</a>
                   </div>
                 </div>
               </div>
               <div className="col-xxl-6 col-xl-6 col-lg-6">
                 <div className="d-flex gap-22 align-items-center justify-content-end">
-                  <div className="hero-image position-relative d-none d-lg-block">
-                    <img src="assets/images/hero/hero-2.png" alt="img" className="w-100 tilt-effect wow fadeInLeft"
-                      data-wow-delay="0.1s" />
-                  </div>
-                  <div className="hero-image position-relative d-none d-lg-block">
-                    <img src="assets/images/hero/hero-3.png" alt="img" className="w-100 tilt-effect wow fadeInRight"
+                  <div className="hero-image position-relative d-none d-lg-block   ">
+                    <img src="assets/images/hero/depremzede.jpeg" alt="img" className="border border-4 rounded border-success w-100 tilt-effect wow fadeInLeft"
                       data-wow-delay="0.1s" />
                   </div>
                 </div>
@@ -86,9 +78,9 @@ function App() {
                 <i className="ri-hand-heart-line"></i>
               </div>
               <div className="helpful-card-caption">
-                <h4 className="caption-title">Education & Food for Chidrens</h4>
-                <p className="caption-para">When deciding which charity to donate to, it important to do your research.</p>
-                <a className="caption-link" href="/kurulus">More Details <i className="ri-arrow-right-s-line"></i></a>
+                <h4 className="caption-title">Yardımlaşma Merkezi</h4>
+                <p className="caption-para">Depremzedelerin Yardım İhtiyaclarını Karşılayabilceği Yardımlaşma Merkezi</p>
+                <a className="caption-link" href="/yardim">Sayfaya Git <i className="ri-arrow-right-s-line"></i></a>
               </div>
               <div className="number-watermark">
                 <h4 className="number">01</h4>
@@ -101,9 +93,9 @@ function App() {
                 <i className="ri-first-aid-kit-line"></i>
               </div>
               <div className="helpful-card-caption">
-                <h4 className="caption-title">Surgery & Medical Treatments</h4>
-                <p className="caption-para">When deciding which charity to donate to, it important to do your research.</p>
-                <a className="caption-link" href="/kurulus">More Details <i className="ri-arrow-right-s-line"></i></a>
+                <h4 className="caption-title">Deprem Çantası Hakkında Bilgi</h4>
+                <p className="caption-para">Deprem Çantası, Hayati önem taşıyan temel ihtiyaç malzemelerini içeren bir hazırlıktır. </p>
+                <a className="caption-link" href="/canta">Sayfaya Git <i className="ri-arrow-right-s-line"></i></a>
               </div>
               <div className="number-watermark">
                 <h4 className="number">02</h4>
@@ -116,9 +108,9 @@ function App() {
                 <i className="ri-global-line"></i>
               </div>
               <div className="helpful-card-caption">
-                <h4 className="caption-title">Environmental Protection</h4>
-                <p className="caption-para">When deciding which charity to donate to, it important to do your research.</p>
-                <a className="caption-link" href="/kurulus">More Details <i className="ri-arrow-right-s-line"></i></a>
+                <h4 className="caption-title">Yardım Kuruluşları</h4>
+                <p className="caption-para">Depremzedelerin Yardım İhtiyaclarını Karşılayabilceği Yardım Kuruluşları.</p>
+                <a className="caption-link" href="/kurulus">Sayfaya Git <i className="ri-arrow-right-s-line"></i></a>
               </div>
               <div className="number-watermark">
                 <h4 className="number">03</h4>
